@@ -1,0 +1,75 @@
+import { Meta, Story } from "@storybook/addon-docs";
+import React from "react";
+import jsonData from "./text.json";
+
+<Meta title="Foundations/Text Styles" />
+
+# Corner Radius
+
+Cette page documente les Text Styles utilisés dans notre projet.
+
+<div
+  style={{
+    display: "flex",
+    flexDirection: "column",
+    width: "100%",
+    fontFamily: "Arial, sans-serif",
+  }}
+>
+  <div
+    style={{
+      display: "flex",
+      flexDirection: "row",
+      fontWeight: "bold",
+      marginBottom: "8px",
+    }}
+  >
+    <div style={{ flex: 1, textAlign: "center" }}>Style</div>
+    <div style={{ flex: 1, textAlign: "center" }}>Line-height value</div>
+    <div style={{ flex: 1, textAlign: "center" }}>Use case example</div>
+  </div>
+  {Object.entries(jsonData).map(([key, values]) =>
+    values.map((item, index) => (
+      <div
+        key={`${key}-${index}`}
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "center",
+          marginBottom: "4px",
+        }}
+      >
+        <div style={{ flex: 1, textAlign: "center", fontWeight: "normal" }}>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              whiteSpace: "nowrap",
+            }}
+          >
+            <div>
+              <p>
+                <code>${item.data}</code>
+              </p>
+            </div>
+            <div>{React.createElement(item.tag, null, item.tag)}</div>
+            <div>{item.example}</div>
+          </div>
+        </div>
+        <div style={{ flex: 1, textAlign: "center", fontWeight: "normal" }}>
+          {item.lineHeightValue}
+        </div>
+        <div
+          style={{
+            flex: 1,
+            fontWeight: "normal",
+            fontSize: `${item.fontSize}px`,
+          }}
+        >
+          {item.example}
+        </div>
+      </div>
+    ))
+  )}
+</div>

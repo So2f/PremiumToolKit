@@ -1,0 +1,113 @@
+import { Meta, Story } from "@storybook/addon-docs";
+
+<Meta title="Foundations/Breakpoints" />
+
+# Breakpoints
+
+Cette page documente les points de rupture et les médias queries utilisés dans notre projet.
+
+## Breakpoints
+
+### Mobile
+
+<p>
+  <code>Mobile: 600px</code>
+</p>
+<div
+  style={{
+    width: "100%",
+    maxWidth: "600px",
+    height: "50px",
+    backgroundColor: "lightblue",
+    margin: "10px 0",
+  }}
+></div>
+
+### Tablet
+
+<p>
+  <code>Tablet: 1024px</code>
+</p>
+<div
+  style={{
+    width: "100%",
+    maxWidth: "1024px",
+    height: "50px",
+    backgroundColor: "lightgreen",
+    margin: "10px 0",
+  }}
+></div>
+
+### Small Desktop
+
+<p>
+  <code>Small Desktop: 1366px</code>
+</p>
+<div
+  style={{
+    width: "100%",
+    maxWidth: "1366px",
+    height: "50px",
+    backgroundColor: "lightpink",
+    margin: "10px 0",
+  }}
+></div>
+
+### Big Desktop
+
+<p>
+  <code>Big Desktop: 1920px</code>
+</p>
+<div
+  style={{
+    width: "100%",
+    maxWidth: "1920px",
+    height: "50px",
+    backgroundColor: "lightyellow",
+    margin: "10px 0",
+  }}
+></div>
+
+## Media Queries
+
+### Mobile
+
+<p>
+  <code>'(max-width: 600px)'</code>
+</p>
+
+### Tablet
+
+<p>
+  <code>'(min-width: 601px) and (max-width: 1024px)'</code>
+</p>
+
+### Mobile and Tablet
+
+<p>
+  <code>'(max-width: 1024px)'</code>
+</p>
+
+### Tablet and Desktop
+
+<p>
+  <code>'(min-width: 601px)'</code>
+</p>
+
+### Desktop
+
+<p>
+  <code>'(min-width: 1025px)'</code>
+</p>
+
+### Small Desktop
+
+<p>
+  <code>'(min-width: 1367px)'</code>
+</p>
+
+### Big Desktop
+
+<p>
+  <code>'(min-width: 1921px)'</code>
+</p>

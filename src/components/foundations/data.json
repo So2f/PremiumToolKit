@@ -1,0 +1,79 @@
+[
+  {
+    "token": "4XS",
+    "value": "4",
+    "rem": "0.25",
+    "example": "4",
+    "color": "#FFFF99"
+  },
+  {
+    "token": "3XS",
+    "value": "8",
+    "rem": "0.5",
+    "example": "8",
+    "color": "#FFFF66"
+  },
+  {
+    "token": "2XS",
+    "value": "12",
+    "rem": "0.75",
+    "example": "12",
+    "color": "#FFFA50"
+  },
+  {
+    "token": "XS",
+    "value": "16",
+    "rem": "1",
+    "example": "16",
+    "color": "#FFCC66"
+  },
+  {
+    "token": "S",
+    "value": "24",
+    "rem": "1.5",
+    "example": "24",
+    "color": "#FFC34D"
+  },
+  {
+    "token": "M",
+    "value": "32",
+    "rem": "2",
+    "example": "32",
+    "color": "#FFB366"
+  },
+  {
+    "token": "L",
+    "value": "40",
+    "rem": "2.5",
+    "example": "40",
+    "color": "#FF9966"
+  },
+  {
+    "token": "XL",
+    "value": "48",
+    "rem": "3",
+    "example": "48",
+    "color": "#FF8040"
+  },
+  {
+    "token": "2XL",
+    "value": "56",
+    "rem": "3.5",
+    "example": "56",
+    "color": "#FF6633"
+  },
+  {
+    "token": "3XL",
+    "value": "64",
+    "rem": "4",
+    "example": "64",
+    "color": "#FF4D4D"
+  },
+  {
+    "token": "4XL",
+    "value": "80",
+    "rem": "5",
+    "example": "80",
+    "color": "#FF3300"
+  }
+]

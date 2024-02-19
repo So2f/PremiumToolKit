@@ -1,0 +1,50 @@
+{
+  "text-primary": {
+    "token": "Colors/Neutral/900",
+    "color": "0D0D0D"
+  },
+  "text-primary-invert": {
+    "token": "Colors/Neutral/0",
+    "color": "FFFFFF"
+  },
+  "text-secondary": {
+    "token": "Colors/Neutral/500",
+    "color": "757575"
+  },
+  "text-secondary-invert": {
+    "token": "Colors/Neutral/100",
+    "color": "F2F2F2"
+  },
+  "text-disabled-default": {
+    "token": "Colors/Neutral/500",
+    "color": "757575"
+  },
+  "text-primary-light": {
+    "token": "Colors/Neutral/400",
+    "color": "BBBBBB"
+  },
+  "text-positive": {
+    "token": "Colors/Validate/500",
+    "color": "05702F"
+  },
+  "text-positive-light": {
+    "token": "Colors/Validate/300",
+    "color": "30C56B"
+  },
+  "text-negative": {
+    "token": "Colors/Alert/500",
+    "color": "D70D0D"
+  },
+  "text-negative-light": {
+    "token": "Colors/Alert/300",
+    "color": "FF3030"
+  },
+  "text-warning": {
+    "token": "Colors/Warning/500",
+    "color": "A85D00"
+  },
+  "text-information": {
+    "token": "Colors/Neutral/500",
+    "color": "757575"
+  }
+}

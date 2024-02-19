@@ -1,0 +1,60 @@
+import { Meta, Story } from "@storybook/addon-docs";
+import jsonData from "./grid.json";
+
+<Meta title="Foundations/Grid" />
+
+# Grid
+
+Cette page documente les Grid utilisés dans notre projet.
+
+{" "}
+
+<div
+  style={{
+    display: "flex",
+    flexDirection: "column",
+    maxWidth: "1000px",
+    margin: "20px auto",
+    border: "1px solid #ccc",
+    borderRadius: "5px",
+  }}
+>
+  <div
+    style={{
+      display: "flex",
+      flexDirection: "row",
+      borderBottom: "1px solid #ccc",
+      padding: "10px 0",
+    }}
+  >
+    <div style={{ flex: 1, fontWeight: "bold" }}>
+      <span style={{ paddingLeft: "10px" }}>Breakpoints</span>
+    </div>
+    <div style={{ flex: 1, fontWeight: "bold" }}>range (px)</div>
+    <div style={{ flex: 1, fontWeight: "bold" }}>columns</div>
+    <div style={{ flex: 1, fontWeight: "bold" }}>gutter (px)</div>
+    <div style={{ flex: 1, fontWeight: "bold" }}>margin (px)</div>
+  </div>
+  {jsonData.breakpoints.map((breakpoint, index) => (
+    <div
+      key={index}
+      style={{
+        display: "flex",
+        flexDirection: "row",
+        padding: "10px 0",
+        borderBottom: "1px solid #ddd",
+      }}
+    >
+      <div style={{ flex: 1, paddingLeft: "10px" }}>
+        {breakpoint.value || "N/A"}
+      </div>
+      <div style={{ flex: 1 }}>{jsonData.ranges[index]?.value || "N/A"}</div>
+      <div style={{ flex: 1 }}>
+        {jsonData.columns[index]?.value || "N/A"}{" "}
+        <span style={{ color: "#999" }}>(fluid)</span>
+      </div>
+      <div style={{ flex: 1 }}>{jsonData.gutter[index]?.value || "N/A"}</div>
+      <div style={{ flex: 1 }}>{jsonData.margin[index]?.value || "N/A"}</div>
+    </div>
+  ))}
+</div>

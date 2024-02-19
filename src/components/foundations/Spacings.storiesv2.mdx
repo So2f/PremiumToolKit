@@ -1,0 +1,78 @@
+import { Meta } from "@storybook/addon-docs";
+import config from "../../../frontend.config.json";
+import jsonData from "./data.json";
+
+<Meta title="Foundations/Spacingsv2" />
+
+# Spacings
+
+Cette page documente les espacements utilisés dans notre projet, présentés de manière visuelle comme une règle.
+
+### Espacements Définis
+
+<div
+  style={{
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+  }}
+>
+  <div>
+    <h3>Token</h3>
+    <p></p>
+  </div>
+  <div>
+    <h3>Value</h3>
+    <p></p>
+  </div>
+  <div>
+    <h3>Rem</h3>
+  </div>
+  <div>
+    <h3>Example</h3>
+  </div>
+</div>
+
+<hr />
+
+<p>
+  {jsonData.map((item, index) => (
+    <div
+      key={index}
+      style={{
+        display: "flex",
+        flexDirection: "row",
+        alignItems: "center",
+        marginBottom: "1.5rem",
+      }}
+    >
+      <div style={{ width: "300px"}}>
+            <h3 style={{ fontSize: "12px"}}>{item.token}</h3>
+          </div>
+          <div style={{ width: "300px" }}>
+            <h3 style={{ fontSize: "12px" }}>{item.value} px</h3>
+          </div>
+          <div style={{ width: "300px" }}>
+            <h3 style={{ fontSize: "12px" }}>{item.rem} rem</h3>
+          </div>
+      <div
+        style={{
+          width: `${item.example}px`,
+          height: `${item.example}px`,
+          backgroundColor: item.color,
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          color: "white",
+          fontSize: "12px"
+        }}
+      >
+        {item.value}
+      </div>
+    </div>
+
+))}
+
+  <hr />
+</p>

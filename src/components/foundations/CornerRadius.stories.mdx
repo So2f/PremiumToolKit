@@ -1,0 +1,84 @@
+import { Meta, Story } from "@storybook/addon-docs";
+import jsonData from "./data.json";
+
+<Meta title="Foundations/Corner Radius" />
+
+# Corner Radius
+
+Cette page documente les Corner Radius utilisés dans notre projet.
+
+<div>
+  <div
+    style={{
+      display: "flex",
+      justifyContent: "space-between",
+      marginBottom: "8px",
+    }}
+  >
+    <div
+      style={{
+        width: "30%",
+        textAlign: "center",
+        background: "#f0f0f0",
+        padding: "8px",
+      }}
+    >
+      <strong>Token</strong>
+    </div>
+    <div
+      style={{
+        width: "30%",
+        textAlign: "center",
+        background: "#f0f0f0",
+        padding: "8px",
+      }}
+    >
+      <strong>Value</strong>
+    </div>
+    <div
+      style={{
+        width: "30%",
+        textAlign: "center",
+        background: "#f0f0f0",
+        padding: "8px",
+      }}
+    >
+      <strong>Example</strong>
+    </div>
+  </div>
+  {jsonData.slice(1, 7).map((item, index) => (
+    <div
+      key={index}
+      style={{
+        display: "flex",
+        justifyContent: "space-between",
+        marginBottom: "4px",
+      }}
+    >
+      <div style={{ width: "30%", padding: "8px" }}>{item.token}</div>
+      <div style={{ width: "30%", padding: "8px" }}>{item.value}</div>
+      <div
+        style={{
+          width: "30%",
+          padding: "8px",
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
+        <div
+          style={{
+            width: "140px",
+            height: "140px",
+            border: "1px solid black",
+            borderRadius: `${item.value}px`,
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          {item.value}
+        </div>
+      </div>
+    </div>
+  ))}
+</div>

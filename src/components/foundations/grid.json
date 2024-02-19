@@ -1,0 +1,22 @@
+{
+  "breakpoints": [
+    { "value": "mobile" },
+    { "value": "tablet" },
+    { "value": "small_desktop" },
+    { "value": "big_desktop" }
+  ],
+  "ranges": [
+    { "value": "300-599 px" },
+    { "value": "600-1023 px" },
+    { "value": "1024-1365 px" },
+    { "value": "1366-1920 px" }
+  ],
+  "columns": [{ "value": 4 }, { "value": 8 }, { "value": 12 }, { "value": 12 }],
+  "gutter": [
+    { "value": 16 },
+    { "value": 24 },
+    { "value": 32 },
+    { "value": 32 }
+  ],
+  "margin": [{ "value": 16 }, { "value": 48 }, { "value": 32 }, { "value": 32 }]
+}

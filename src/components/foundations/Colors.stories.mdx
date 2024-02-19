@@ -1,0 +1,61 @@
+import { Meta, Story } from "@storybook/addon-docs";
+import jsonData from "./colors.json";
+
+<Meta title="Foundations/Colors" />
+
+# Colors
+
+Cette page documente les couleurs utilisées dans notre projet.
+
+<div
+  style={{
+    display: "flex",
+    flexDirection: "row",
+    width: "100%",
+    fontFamily: "Arial, sans-serif",
+  }}
+>
+  {/* First Column: Color */}
+  <div style={{ flex: 1, paddingRight: "10px", display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
+    <div
+      style={{
+        marginBottom: "8px",
+        fontWeight: "bold",
+      }}
+    >
+      Color
+    </div>
+    {Object.entries(jsonData).map(([key, value]) => (
+      <div key={key} style={{ marginBottom: "20px"}}>
+        <div>{key}</div>
+      </div>
+    ))}
+  </div>
+
+{/* Second Column: Token and Ellipse */}
+
+  <div style={{ flex: 1, paddingLeft: "10px", display: "flex", flexDirection: "column", alignItems: "flex-end" }}>
+    <div
+      style={{
+        marginBottom: "8px",
+        fontWeight: "bold",
+      }}
+    >
+      Token and Ellipse
+    </div>
+    {Object.entries(jsonData).map(([key, value]) => (
+      <div key={key} style={{ marginBottom: "20px", display: "flex", alignItems: "center"}}>
+        <div style={{ marginRight: "8px"}}>{value.token}</div>
+        <div
+          style={{
+            backgroundColor: `#${value.color}`,
+            width: "20px",
+            height: "20px",
+            borderRadius: "50%",
+            border: "1px solid #757575"
+          }}
+        ></div>
+      </div>
+    ))}
+  </div>
+</div>

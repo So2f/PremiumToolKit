@@ -1,0 +1,35 @@
+{
+  "mned-40": [
+    {
+      "style": "Display 1",
+      "lineHeightValue": "120%",
+      "example": "Maison Neue\nExtended DemiBold 40",
+      "useCase": "test",
+      "data": "mned-40",
+      "tag": "h1",
+      "fontSize": "40"
+    }
+  ],
+  "mned-33": [
+    {
+      "style": "Heading 1",
+      "lineHeightValue": "120%",
+      "example": "Maison Neue\nExtended DemiBold 33",
+      "useCase": "test",
+      "data": "mned-33",
+      "tag": "h2",
+      "fontSize": "33"
+    }
+  ],
+  "mned-28": [
+    {
+      "style": "Heading 2",
+      "lineHeightValue": "120%",
+      "example": "Maison Neue\nExtended DemiBold 28",
+      "useCase": "test",
+      "data": "mned-28",
+      "tag": "h3",
+      "fontSize": "28"
+    }
+  ]
+}
